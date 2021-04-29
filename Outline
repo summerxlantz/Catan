@@ -41,7 +41,7 @@ Game Components {
     
     Game play components {
         Dice {
-        - Two six sided dice
+            - Two six sided dice
         }   
 
         4 Building cost Cards {
@@ -84,9 +84,9 @@ Game Components {
 
         Specialty cards {
             Largest Army {
-            - 2 extra points while held
-            - Must have at least 3 knights
-            - Player with the most knignts gets the card
+                - 2 extra points while held
+                - Must have at least 3 knights
+                - Player with the most knignts gets the card
             }
 
             Lonegest Road {
@@ -166,11 +166,12 @@ Game Play {
         }
     }
 
-    - Trade
-    - One for One
-    - Two for One
-    - Three for Two
-    - ...
+    Trade {
+        - One for One
+        - Two for One
+        - Three for Two
+        - ...
+    }
 
     Win {
         - First player with 10 points
