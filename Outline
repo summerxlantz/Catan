@@ -1,0 +1,181 @@
+Catan
+
+Game Components {
+    Board components {
+        Board tiles {
+            - 1 Desert
+            - 3 Ore
+            - 3 Brick
+            - 4 Wood
+            - 4 Sheep
+            - 4 Wheat
+        }
+
+        Sea frame {
+            Ports {
+                - Wheat 2:1
+                - Ore 2:1
+                - Sheep 2:1
+                - Brick 2:1
+                - Wood 2:1
+                - 3 / ? 3:1
+            }
+        }
+
+
+        Number Tokens {
+            18 Total(number, amount) {
+                - 2/1
+                - 3/2
+                - 4/2
+                - 5/2
+                - 6/2
+                - 8/2
+                - 9/2
+                - 10/2
+                - 11/2
+                - 12/1
+            }
+        }
+    }
+    
+    Game play components {
+        Dice {
+        - Two six sided dice
+        }   
+
+        4 Building cost Cards {
+            - Lists the building Prices
+        }
+
+        Resource Cards {
+            - Wheat
+            - Brick
+            - Wood
+            - Ore
+            - Sheep
+        }
+        
+        Development Cards {
+            Rules {
+                -Cannot be played during the turn that you bought the card
+                - Can be played at any point in your turn after turn that you bought the card
+            }
+
+            Card types {
+                14 Knight {
+                    - Move Robber
+                    - Add random knight
+                }
+
+                3 Monoploly {
+                    - Collect all of a single resourse from everyones hands
+                }
+
+                3 Road Builder {
+                    -Roads+++
+                }
+
+                5 Victory Point {
+                    -Points++
+                }
+            }
+        }
+
+        Specialty cards {
+            Largest Army {
+            - 2 extra points while held
+            - Must have at least 3 knights
+            - Player with the most knignts gets the card
+            }
+
+            Lonegest Road {
+                - 2 extra points while held
+                - Must have at least 5 roads
+                - Player with the most roads gets the card
+            }
+        }
+        
+        Roads {
+            - 15 roads
+            - No points
+            - Cannot intersect
+            - Must be connected to a house of your color
+        }
+
+        Settlement {
+            - Five settlements
+            - One point each
+            - At least two roads apart
+            - One resource per number rolled
+        }
+
+
+        Cities {
+            - Four cities
+            - Two points
+            - At least two roads apart
+            - Two resources per number rolled
+        }
+
+        Rober {
+            - One Robber
+            - Can be moved by rolling a 7
+            - Can be moved by playing a night
+            - Block resource that robber is on
+            - Take one resource card at random from any player who has a settlement or city on that tile.
+            - Place knight face up after use {
+                knight ++ towards largest army
+            }
+
+        }
+    }    
+}
+
+
+Game Play {
+    Play development card {
+        - Can be played at any point in your turn
+    }
+
+    Roll Dice {
+        - Players with settlements or cities on the numbers rolled collect the appropriate number or resources.
+        - If a seven in rolled, any player with > 7 cards must discard half of cards to the bank
+
+        function rollDice(6) {
+            return Math.floor(Math.random(6) * )
+        }
+    }
+
+    Build {
+        Road {
+            - One wood
+            - One brick
+        }
+
+        Settlemnt {
+            - Wood
+            - Brick
+            - Sheep
+            - Wheat
+        }
+
+        City {
+            - Three Ore
+            - Two wheat
+        }
+    }
+
+    - Trade
+    - One for One
+    - Two for One
+    - Three for Two
+    - ...
+
+    Win {
+        - First player with 10 points
+        if (player1Points == 10) {
+            alert("Player 1 wins!);
+        }
+    }
+}
