@@ -1,0 +1,23 @@
+.catanBoard {
+  width: 55%;
+  margin: auto;
+}
+
+.rowOne {
+  transform: translate(180px, 100px);
+}
+
+.rowTwo {
+  transform: translate(90px, 50px);
+}
+
+.rowThree {
+}
+
+.rowFour {
+  transform: translate(90px, -50px);
+}
+
+.rowFive {
+  transform: translate(180px, -100px);
+}
