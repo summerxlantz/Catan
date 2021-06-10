@@ -21,3 +21,7 @@
 .rowFive {
   transform: translate(180px, -100px);
 }
+
+.hex {
+  margin: -5px;
+}
