@@ -8,7 +8,7 @@ const BoardTile: React.FC<BoardTileProps> = ({ id }: BoardTileProps) => {
   console.log(id);
 
   return (
-    <svg style={{ margin: "-5px" }} width="175" height="200">
+    <svg width="175" height="200">
       <polyline
         points="87,0 174,50 174,150 87,200 0,150 0,50 87,0"
         fill="red"
