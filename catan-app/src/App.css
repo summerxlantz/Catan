@@ -1,4 +1,4 @@
-.rowOne {
+/* .rowOne {
   transform: translate(180px, 100px);
 }
 
@@ -7,6 +7,7 @@
 }
 
 .rowThree {
+  transform: translate(90px, 30px);
 }
 
 .rowFour {
@@ -14,6 +15,19 @@
 }
 
 .rowFive {
-  transform: translate(180px, -100px);
+  transform: translate(180px, -10000px);
+} */
+
+/* .boardStyle {
+  viewBox: "0 0 60 55";
+} */
+
+/*  */
+.hex-wrapper {
+  width: 20%;
 }
 
+.boardRow {
+    display: flex;
+    justify-content: center;
+}

@@ -21,7 +21,7 @@ const BoardRow: React.FC<BoardRowProps> = ({
     tiles.push(<BoardTile id={`${id}-${n + 1}`} />);
   }
 
-  return <div style={style}>{tiles}</div>;
+  return <div className='boardRow' style={style}>{tiles}</div>;
 };
 
 export default BoardRow;
